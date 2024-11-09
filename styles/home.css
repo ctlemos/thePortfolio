@@ -3,15 +3,65 @@ main {
     height: 100vh;
 }
 
-.home__wrapper {
+.home__header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensures the header image appears above the background */
+    width: 100%; /* Optional: can adjust width as needed */
+    /* text-align: center; */ /* Centers the logo horizontally */
+    padding: 3rem; 
+}
+
+.logo {
+    width: 4rem;
+}
+
+/* HOME MAIN IMG */
+.home__main {
+    position: relative; /* Keeps the section below the header */
+
     width: 100%;
     height: 100%;
     background-image: url("../images/img_rute_main_page.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 100;
+
+    z-index: 0; /* Places the section background behind the header */
 }
 
+.home__main-wrapper {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home__main-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home__main-nav ul {
+    display: flex;
+    padding: 0; 
+    margin: 0; 
+}
+
+.home__main-nav li {
+    margin: 0 20px;
+    font-size: 1rem;
+}
+
+
+/* HOME SECOND IMG */
 .home__section {
     width: 100%;
     height: 100%;
@@ -21,13 +71,19 @@ main {
     justify-content: center;
 }
 
+.home__section-wrapper {
+    position: relative;
+}
 
 .home__section-img {
-    width: 20rem;
+    width: 27rem;
 }
 
 .home__section-contact {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+    color: black;
+    position: absolute;
+    bottom: -45px;
+    right: -0.6rem;
+    padding: 10px;
+    font-size: 2rem;
 }

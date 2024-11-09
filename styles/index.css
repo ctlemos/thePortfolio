@@ -1,3 +1,5 @@
+/* UTILITIES */
+@import 'fonts/font.css';
 @import "home.css";
 
 * {
@@ -7,8 +9,14 @@
     box-sizing: border-box;
 }
 
-a {
+body {
+    font-family: 'Freigeist-wideblack';
+}
+
+li, a {
+    color: yellow;
     list-style: none;
     text-decoration: none;
-    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
 }
