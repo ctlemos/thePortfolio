@@ -1,22 +1,51 @@
-/* UTILITIES */
 @import 'fonts/font.css';
 @import "home.css";
+@import "contact.css";
 
 * {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
-}
 
-body {
     font-family: 'Freigeist-wideblack';
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* HEADER */
+.main__header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%; 
+    /* text-align: center; */ /* Centers the logo horizontally */
+    padding: 3rem; 
+}
+
+h1, a {
+    text-transform: uppercase;
+}
+
+/* LOGO */
+.logo {
+    width: 4rem;
+}
+
+/* LINKS */
 li, a {
-    color: yellow;
+    color: #FFD700;
     list-style: none;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #eca62b;
 }
