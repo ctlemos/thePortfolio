@@ -7,3 +7,8 @@
     font-family: 'Freigeist-wideblack';
     src: url('Fontspring-DEMO-freigeist-wideblack.otf');
 }
+
+@font-face {
+    font-family: 'Abel-regular';
+    src: url('Abel-Regular.ttf');
+}

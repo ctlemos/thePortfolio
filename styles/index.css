@@ -1,6 +1,9 @@
 @import 'fonts/font.css';
 @import "home.css";
+@import "about.css";
+@import "work.css";
 @import "contact.css";
+@import "shop.css";
 
 * {
     margin: 0;
@@ -71,7 +74,7 @@ main {
 		top: 0;
 		width: 50%;
 		height: 100vh;
-		background: #ede3ce;
+		background: #525252;
 		z-index:10;
 	}
 
@@ -92,23 +95,36 @@ main {
 		cursor: pointer;
 		z-index: 20;
 	}
+
+    /* Place the 'X' on the left side when open */
+    .main__nav-hamburger.active {
+        position: absolute;
+        left: 25rem; 
+    }
 	
 	.bar {
 		display: block;
 		width: 25px;
-		height: 3px;
-		margin: 5px auto;
+		height: 2px;
+		margin: 4px auto;
 		transition: all 500ms ease-in-out;
 		background-color: #000;
 	}
+
+    /* White color when menu is open */
+    .main__nav-hamburger.active .bar {
+        background-color: #fff; 
+    }
+
 	.main__nav-hamburger.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
+		transform: translateY(6px) rotate(45deg);
 	}
+    /* Hidden middle bar */
 	.main__nav-hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
 	.main__nav-hamburger.active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
+		transform: translateY(-6px) rotate(-45deg);
 	}
 }
 

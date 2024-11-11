@@ -1,0 +1,46 @@
+.about__main {
+    width: 100%;
+    height: 100%;
+    padding-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem; 
+    text-align: center; 
+}
+
+.about__main-img img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover; /* Ensures the image fits well within the circle */
+    transition: filter 0.3s ease;
+}
+
+.about__main-img img:hover {
+    filter: grayscale(100%);
+}
+
+.about__main-text {
+    max-width: 30rem;
+}
+
+.about__main-text p {
+    font-family: 'Abel-regular';
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .about__main {
+        width: 100%;
+        height: 100%;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .about__main-text {
+        margin-top: 0; /* Remove extra top margin */
+    }
+}

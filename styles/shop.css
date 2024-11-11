@@ -1,0 +1,25 @@
+/* SCROLLING TEXT */
+.shop__section-title {
+    max-width: 100%;
+    padding-top: 20rem;
+    font-size: 3rem;
+    display: flex; 
+    justify-content: flex-start;
+    overflow: hidden; 
+}
+
+.shop__section-title h1 {
+    margin: 0;
+    padding: 0 6rem;
+    animation: scrollText 20s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
