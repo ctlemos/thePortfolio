@@ -64,3 +64,53 @@
     padding: 10px;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+     /* HOME MAIN */
+     .home__main-title {
+        font-size: 2rem;
+    }
+
+    .home__main-wrapper {
+        height: 85rem;
+    }
+
+    /* NAVBAR */
+    .home__main-nav li {
+        margin: 0 20px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* HOME MAIN */
+    .home__main-title {
+        font-size: 1.5rem;
+    }
+
+    .home__main-wrapper {
+        height: 75rem;
+    }
+
+    /* NAVBAR */
+    .home__main-nav li {
+        margin: 0 20px;
+        font-size: 0.6rem;
+    }
+
+    /* HOME SECOND IMG */
+    .home__section {
+        height: 80%;
+    }
+
+    .home__section-img {
+        width: 300px;
+    }
+
+    .home__section-contact {
+        bottom: -25px;
+        right: -0.6rem;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}

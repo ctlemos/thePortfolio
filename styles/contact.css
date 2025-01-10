@@ -35,7 +35,6 @@
     }
 }
 
-
 /* CONTACT INFO */
 .contact__info {
     display: flex;
@@ -101,4 +100,40 @@
   
 .contact__social-btn:hover::before {
     box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
+}
+
+@media screen and (max-width: 768px) {
+    /* SCROLLING TEXT */
+    .contact__section-title {
+        padding-top: 4rem;
+        font-size: 2.5rem;
+    }
+
+    /* BUTTON */
+    .contact__social {
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* SCROLLING TEXT */
+    .contact__section-title {
+        padding-top: 4rem;
+        font-size: 1.8rem;
+    }
+
+    .contact__section-title h1 {
+        padding: 0 3rem;
+    }
+
+    /* CONTACT INFO */
+    .contact__info {
+        padding-top: 3rem;
+        font-size: 1rem;
+    }
+
+    /* BUTTON */
+    .contact__social {
+        padding-top: 4rem;
+    }
 }
