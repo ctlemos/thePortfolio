@@ -29,44 +29,73 @@
     </header>
 
     <main>
-       <section class="scroll__menu">
-            <div class="scroll__menu-wrapper">
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P01.png" alt="Pattern Romantic Blue"></a>
-                    <span>Romatic Blue</span>
+        <section class="work__section">
+            <div class="scroll__menu">
+                
+                <div class="scroll__menu-img">
+                    <img src="images/patterns/samples/P01.png" alt="Pattern Romantic Blue">
+                    <h1>Romatic Blue</h1>
+                    <div class="details">
+                        <h2>Romatic Blue</h2>
+                    </div>
                 </div>
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P02.png" alt="Pattern Wavy"></a>
-                    <span>Wavy</span>
+                <div class="scroll__menu-img">
+                    <img src="images/patterns/samples/P02.png" alt="Pattern Wavy">
+                    <h1>Wavy</h1>
+                    <div class="details">
+                        <h2>Wavy</h2>
+                    </div>
                 </div>
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P03.png" alt="Pattern Tropics"></a>
-                    <span>Tropics</span>
+                <div class="scroll__menu-img">
+                    <img src="images/patterns/samples/P03.png" alt="Pattern Tropics">
+                    <h1>Tropics</h1>
+                    <div class="details">
+                        <h2>Tropics</h2>
+                    </div>
                 </div>
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P04.png" alt="Pattern Flame"></a>
-                    <span>Flame</span>
+                <div class="scroll__menu-img active">
+                    <img src="images/patterns/samples/P04.png" alt="Pattern Flame">
+                    <h1>Flame</h1>
+                    <div class="details">
+                        <h2>Flame</h2>
+                    </div>
                 </div>
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P05.png" alt="Pattern Back in Time"></a>
-                    <span>Back in Time</span>
+                <div class="scroll__menu-img">
+                    <img src="images/patterns/samples/P05.png" alt="Pattern Back in Time">
+                    <h1>Back in Time</h1>
+                    <div class="details">
+                        <h2>Back in Time</h2>
+                    </div>
                 </div>
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P06.png" alt="Pattern Rustic line"></a>
-                    <span>Rustic Line</span>
+                <div class="scroll__menu-img">
+                    <img src="images/patterns/samples/P06.png" alt="Pattern Rustic line">
+                    <h1>Rustic Line</h1>
+                    <div class="details">
+                        <h2>Rustic Line</h2>
+                    </div>
                 </div>
-                <div class="menu_img">
-                    <a href="#"><img src="images/patterns/samples/P07.png" alt="Pattern Olivia"></a>
-                    <span>Olivia</span>
+                <div class="scroll__menu-img">
+                    <img src="images/patterns/samples/P07.png" alt="Pattern Olivia">
+                    <h1>Olivia</h1>
+                    <div class="details">
+                        <h2>Olivia</h2>
+                    </div>
                 </div>
+                
             </div>
-
-            <div class="scroll__menu-dots" id="menuDots"></div>
-       </section>
-
+        </section>
        <footer>Rute Lemos © 2024. All rights reserved.</footer>
     </main>
 
     <script src="js/hamburgerMenu.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $('.scroll__menu-img').on('click', function(){
+                $('.scroll__menu-img').removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
 </body>
 </html>
