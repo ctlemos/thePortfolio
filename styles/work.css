@@ -42,7 +42,7 @@
 }
 
 /* TITLES */
-h1 {
+.work-title {
     font-family: 'Abel-regular';
     font-size: 35px;
     text-align: left;
