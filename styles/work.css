@@ -1,93 +1,155 @@
 /* SCROLL MENU */
-.work__section {
-    width: 100%;
-    height: 100vh;
-    padding-top: 8rem;
+.body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    padding-top: 8rem;
 }
 
-.scroll__menu {
+.container { 
+   max-width: 1200px;
+   width: 95%;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
     display: flex;
     align-items: center;
-    gap: 21px;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
 }
 
-.scroll__menu img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
+.slider-wrapper .slide-button:hover {
+    background: #444;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: -20px;
+    display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: -20px;
 }
 
 .scroll__menu-img {
-    width: 150px;
-    cursor: pointer;
-    position: relative;
-    transition: 0.7s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/* SCROLL SIZE */
-.scroll__menu .scroll__menu-img:first-child, .scroll__menu .scroll__menu-img:last-child {
-    height: 280px;
-}
-
-.scroll__menu .scroll__menu-img:nth-child(2), .scroll__menu .scroll__menu-img:nth-child(6) {
-    height: 360px;
-}
-
-.scroll__menu .scroll__menu-img:nth-child(3), .scroll__menu .scroll__menu-img:nth-child(4), .scroll__menu .scroll__menu-img:nth-child(5) {
-    height: 465px;
-}
-
-/* TITLES */
-.work-title {
-    font-family: 'Abel-regular';
-    font-size: 35px;
-    text-align: left;
-    text-transform: uppercase;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: rotate(270deg);
-    transition: 0.7s ease;
-}
-
-.details {
-    position: absolute;
-    bottom: 80px;
-    left: 130px;
-}
-
-.details h2 {
+.scroll__menu-img h2 {
     font-family: 'Abel-regular';
     font-size: 26px;
-    text-align: left;
     text-transform: uppercase;
     line-height: 44px;
-    text-align: left;
-    color: #fff;
-    transition: 0.7s ease;
-    display: none;
+    color: #000;
     cursor: pointer;
 }
 
-.details h2:hover {
+.scroll__menu-img h2:hover {
     color: #eca62b;
 }
 
-/* IMG ACTIVE */
-.scroll__menu-img.active {
-    width: 366px !important;
-    height: 600px !important;
+.slider-wrapper .image-list { 
+    display: grid;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 30px;
 }
 
-.scroll__menu-img.active h1 {
+.slider-wrapper .image-list::-webkit-scrollbar {
     display: none;
 }
 
-.scroll__menu-img.active .details h2 {
-    display: block;
+
+.slider-wrapper .image-list .image-item { 
+    width: 425px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scroll-track {
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scroll-track {
+    height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background: #000;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none!important;
+    }
+
+    .slider-wrapper .image-list {
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
 }

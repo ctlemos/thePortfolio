@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 </head>
 <body>
     
-    <header class="main__header">
+   <header class="main__header">
         <a href="index.html"><img class="logo" src="images/logo-black.png" alt="logo"></a>
             
         <div class="main__nav" id="mainNav">
@@ -26,76 +27,99 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-    </header>
+    </header> 
 
     <main>
+        <section class="body">
+            <div class="container">
+                <div class="slider-wrapper">
+
+                    <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+
+                    <div class="image-list">
+                        <div class="scroll__menu-img">
+                            <img src="images/patterns/samples/P01.png" alt="Pattern Romantic Blue" class="image-item">
+                            <a href="work/romanticBlue.html"><h2>Romatic Blue</h2></a>
+                        </div>
+                        <div class="scroll__menu-img">
+                            <img src="images/patterns/samples/P02.png" alt="Pattern Wavy" class="image-item">
+                            <a href="work/wavy.html"><h2>Wavy</h2></a>
+                        </div>
+                        <div class="scroll__menu-img">
+                            <img src="images/patterns/samples/P03.png" alt="Pattern Tropicus" class="image-item">
+                            <a href="work/tropicus.html"><h2>Tropicus</h2></a>
+                        </div>
+                        <div class="scroll__menu-img active">
+                            <img src="images/patterns/samples/P04.png" alt="Pattern Flame" class="image-item">
+                            <a href="work/flame.html"><h2>Flame</h2></a>
+                        </div>
+                        <div class="scroll__menu-img">
+                            <img src="images/patterns/samples/P05.png" alt="Pattern Back in Time" class="image-item">
+                            <a href="work/backInTime.html"><h2>Back in Time</h2></a>
+                        </div>
+                        <div class="scroll__menu-img">
+                            <img src="images/patterns/samples/P06.png" alt="Pattern Rustic line" class="image-item">
+                            <a href="work/rusticLine.html"><h2>Rustic Line</h2></a>
+                        </div>
+                        <div class="scroll__menu-img">
+                            <img src="images/patterns/samples/P07.png" alt="Pattern Olivia" class="image-item">
+                            <a href="work/olivia.html"><h2>Olivia</h2></a>
+                        </div>
+                    </div>
+
+                    <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+
+                </div> 
+
+                <div class="slider-scrollbar">
+                    <div class="scroll-track">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>Rute Lemos © 2024. All rights reserved.</footer>
+    </main>
+    <!-- <main>
         <section class="work__section">
             <div class="scroll__menu">
                 
                 <div class="scroll__menu-img">
-                    <img src="images/patterns/samples/P01.png" alt="Pattern Romantic Blue">
+                    <img src="images/patterns/samples/P01.png" alt="Pattern Romantic Blue" class="image-item">
                     <h1 class="work-title">Romatic Blue</h1>
-                    <div class="details">
-                        <a href="work/romanticBlue.html"><h2>Romatic Blue</h2></a>
-                    </div>
+                    <a href="work/romanticBlue.html"><h2>Romatic Blue</h2></a>
                 </div>
                 <div class="scroll__menu-img">
-                    <img src="images/patterns/samples/P02.png" alt="Pattern Wavy">
-                    <h1 class="work-title">Wavy</h1>
-                    <div class="details">
-                        <a href="work/wavy.html"><h2>Wavy</h2></a>
-                    </div>
+                    <img src="images/patterns/samples/P02.png" alt="Pattern Wavy" class="image-item">
+                    <a href="work/wavy.html"><h2>Wavy</h2></a>
                 </div>
                 <div class="scroll__menu-img">
-                    <img src="images/patterns/samples/P03.png" alt="Pattern Tropicus">
-                    <h1 class="work-title">Tropicus</h1>
-                    <div class="details">
-                        <a href="work/tropicus.html"><h2>Tropicus</h2></a>
-                    </div>
+                    <img src="images/patterns/samples/P03.png" alt="Pattern Tropicus" class="image-item">
+                    <a href="work/tropicus.html"><h2>Tropicus</h2></a>
                 </div>
                 <div class="scroll__menu-img active">
-                    <img src="images/patterns/samples/P04.png" alt="Pattern Flame">
-                    <h1 class="work-title">Flame</h1>
-                    <div class="details">
-                        <a href="work/flame.html"><h2>Flame</h2></a>
-                    </div>
+                    <img src="images/patterns/samples/P04.png" alt="Pattern Flame" class="image-item">
+                    <a href="work/flame.html"><h2>Flame</h2></a>
                 </div>
                 <div class="scroll__menu-img">
-                    <img src="images/patterns/samples/P05.png" alt="Pattern Back in Time">
-                    <h1 class="work-title">Back in Time</h1>
-                    <div class="details">
-                        <a href="work/backInTime.html"><h2>Back in Time</h2></a>
-                    </div>
+                    <img src="images/patterns/samples/P05.png" alt="Pattern Back in Time" class="image-item">
+                    <a href="work/backInTime.html"><h2>Back in Time</h2></a>
                 </div>
                 <div class="scroll__menu-img">
-                    <img src="images/patterns/samples/P06.png" alt="Pattern Rustic line">
-                    <h1 class="work-title">Rustic Line</h1>
-                    <div class="details">
-                        <a href="work/rusticLine.html"><h2>Rustic Line</h2></a>
-                    </div>
+                    <img src="images/patterns/samples/P06.png" alt="Pattern Rustic line" class="image-item">
+                    <a href="work/rusticLine.html"><h2>Rustic Line</h2></a>
                 </div>
                 <div class="scroll__menu-img">
-                    <img src="images/patterns/samples/P07.png" alt="Pattern Olivia">
-                    <h1 class="work-title">Olivia</h1>
-                    <div class="details">
-                        <a href="work/olivia.html"><h2>Olivia</h2></a>
-                    </div>
+                    <img src="images/patterns/samples/P07.png" alt="Pattern Olivia" class="image-item">
+                    <a href="work/olivia.html"><h2>Olivia</h2></a>
                 </div>
                 
             </div>
         </section>
        <footer>Rute Lemos © 2024. All rights reserved.</footer>
-    </main>
+    </main> -->
 
     <script src="js/hamburgerMenu.js"></script>
-    <script src="js/jQuery.js"></script>
-    <script>
-         jQuery(document).ready(function($){
-            $('.scroll__menu-img').on('click', function(){
-                $('.scroll__menu-img').removeClass('active');
-                $(this).addClass('active');
-            })
-        })
-    </script>
+    <script src="js/imageSlider.js" defer></script>
 </body>
 </html>
