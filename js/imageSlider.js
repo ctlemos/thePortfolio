@@ -1,8 +1,8 @@
 const initSlider = () => {
-    const imageList = document.querySelector(".slider-wrapper .image-list");
-    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
-    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const imageList = document.querySelector(".slider__wrapper .wrapper__image-list");
+    const slideButtons = document.querySelectorAll(".slider__wrapper .slide_button");
+    const sliderScrollbar = document.querySelector(".main__section-container .slider__scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar__thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
     /* HANDLE SCROLLBAR THUMB DRAG */
@@ -37,7 +37,7 @@ const initSlider = () => {
     /* SCROLL BEHAVIOUR */
     slideButtons.forEach(button => {
         button.addEventListener("click", () => {
-           const direction = button.id === "prev-slide" ? -1 : 1;
+           const direction = button.id === "prev_slide" ? -1 : 1;
            const scrollAmount = imageList.clientWidth * direction;
            imageList.scrollBy({left: scrollAmount, behavior: "smooth"});
         });
