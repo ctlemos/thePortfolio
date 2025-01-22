@@ -65,7 +65,7 @@
     font-size: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
      /* HOME MAIN */
      .home__main-title {
         font-size: 2rem;
