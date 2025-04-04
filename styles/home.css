@@ -28,9 +28,7 @@
 
 /* NAVBAR */
 .home__main-nav ul {
-    display: flex;
-    padding: 0; 
-    margin: 0; 
+    display: flex;  
 }
 
 .home__main-nav li {
@@ -66,8 +64,8 @@
 }
 
 @media screen and (max-width: 821px) {
-     /* HOME MAIN */
-     .home__main-title {
+    /* HOME MAIN */
+    .home__main-title {
         font-size: 2rem;
     }
 
