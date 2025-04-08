@@ -15,8 +15,7 @@
 .img__wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
-    padding-right: 200px;
+    justify-content: center; 
 }
 
 .img__wrapper img {
@@ -35,6 +34,9 @@
 
 .love-may {
     height: 430px;
+}
+.cockaffair {
+    height: 450px;
 }
 
 @media screen and (max-width: 821px) {
