@@ -14,7 +14,7 @@ const Home = () => {
                 <motion.div
                   animate={{ y: [0, 10, 0] }}
                   transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
-                  className="text-white">
+                  className="home__arrow">
 
                   <IoIosArrowDown size={32} />
                   
