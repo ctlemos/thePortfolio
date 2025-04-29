@@ -1,0 +1,47 @@
+@import './assets/fonts/font.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	
+	font-family: 'Freigeist-wideblack';
+	scroll-behavior: smooth;
+}
+
+:root {
+	--main-color: #000;
+	--gray: #525252;
+	--links: #FFD700;
+	--links-hover: #eca62b;
+	--linkedin: rgb(0, 119, 181);
+}
+
+/* TITLES + LINKS */
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-family:'Abel-regular';
+    text-transform: uppercase;
+	font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+li, a {
+	font-weight: lighter;
+	text-transform: uppercase;
+    color: var(--links);
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s ease;
+	cursor: pointer;
+}
+
+a:hover {
+    color: var(--links-hover);
+}

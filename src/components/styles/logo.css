@@ -1,0 +1,15 @@
+.logo {
+    position: absolute;
+    width: 4rem;
+    margin: 2rem 3rem;
+    transition: filter 0.3s ease;
+    z-index: 1;
+}
+
+.logo_white {
+    filter: invert(0);
+}
+
+.logo_black {
+    filter: invert(1);
+}

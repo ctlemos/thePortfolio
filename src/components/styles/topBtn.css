@@ -1,0 +1,14 @@
+.top_btn {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.top_btn:hover {
+    color: var(--links-hover);
+}

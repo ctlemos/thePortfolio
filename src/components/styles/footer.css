@@ -1,0 +1,15 @@
+footer {
+	color: var(--main-color);
+	text-align: center;
+	padding: 6rem 0 1rem 0;
+
+	font-size: 1rem;
+	font-family:'Abel-regular';
+}
+
+@media screen and (max-width: 821px) {
+	footer {
+		padding-top: 4.5rem;
+		font-size: 0.8rem;
+	}
+}

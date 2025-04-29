@@ -1,0 +1,52 @@
+.uxui__container {
+    position: relative;
+    width: 100%;
+    padding: 0 1rem;
+}
+  
+.uxui__gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+  
+.uxui__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uxui__item img {
+    height: 60vh;
+    width: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform;
+}
+
+.uxui__item img:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.uxui__item h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 821px) {
+    .uxui__container {
+        padding: 8rem;
+    }
+      
+    .uxui__item img {
+        height: 20vh;
+    }
+    
+    .uxui__item h2 {
+        font-size: 2rem;
+    }
+}
