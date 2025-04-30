@@ -29,6 +29,7 @@
     }
 }
 
+/* MOBILE */
 @media screen and (max-width: 821px) {
     .shop__section {
         height: 70vh;

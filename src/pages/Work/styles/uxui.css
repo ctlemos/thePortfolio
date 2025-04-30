@@ -37,6 +37,7 @@
     margin-top: 1rem;
 }
 
+/* MOBILE */
 @media screen and (max-width: 821px) {
     .uxui__container {
         padding: 8rem;

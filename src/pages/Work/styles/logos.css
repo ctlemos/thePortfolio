@@ -37,6 +37,7 @@
     margin-top: 1rem;
 }
 
+/* MOBILE */
 @media screen and (max-width: 991px) {
     .logos__container {
         padding-top: 5rem;

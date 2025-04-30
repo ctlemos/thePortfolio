@@ -35,6 +35,7 @@
     height: auto;
 }  
 
+/* MOBILE */
 @media screen and (max-width: 821px) {
     .uxui-mockup__img-container {
         margin: -3px;

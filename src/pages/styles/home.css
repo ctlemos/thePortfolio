@@ -21,6 +21,7 @@
 .home__main-title {
     padding-top: 27rem;
     font-size: 3rem;
+    text-shadow: 1px 1px 1px var(--main-color);
 }
 
 
@@ -52,6 +53,7 @@
     font-size: 2rem;
 }
 
+/* MOBILE */
 @media screen and (max-width: 991px) {
     /* HOME MAIN IMG */
     .home__main-title {

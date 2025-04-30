@@ -88,6 +88,7 @@
     opacity: 0;
 }
   
+/* MOBILE */
 @media (max-width: 768px) {
     .patterns__container {
         padding-top: 2rem;
