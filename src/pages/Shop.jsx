@@ -1,4 +1,3 @@
-import React from 'react';
 import './styles/shop.css';
 
 const Shop = () => {

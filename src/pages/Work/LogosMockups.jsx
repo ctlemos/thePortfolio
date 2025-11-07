@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import logosData from '../../assets/js/logosData.js';
 import './styles/logosMockups.css';

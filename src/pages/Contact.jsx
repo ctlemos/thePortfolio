@@ -1,4 +1,3 @@
-import React from 'react';
 import './styles/contact.css';
 import { FaLinkedin } from "react-icons/fa";
 

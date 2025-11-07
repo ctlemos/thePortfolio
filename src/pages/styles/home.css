@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 0; /* Places the section background behind the header */
+    z-index: 0;
 }
 
 .home__main-wrapper {
@@ -15,10 +15,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color: var(--links);
+    color: var(--main-color);
 }
 
 .home__main-title {
+    color: var(--links);
     padding-top: 27rem;
     font-size: 3rem;
     text-shadow: 1px 1px 1px var(--main-color);

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import patternsData from '../../assets/js/patternsData.js';
 import './styles/patternsMockups.css';

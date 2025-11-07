@@ -12,17 +12,12 @@ const logosData = [
         pdfImage: ['/images/logos/mockups/COCKAFFAIR.jpg']
     },
     { 
-        id: 3,
-        src: '/images/logos/samples/love&may.jpg', 
-        name: 'Love&May',
-        pdfImage: [
-            '/images/logos/mockups/love&may/1.jpg',
-            '/images/logos/mockups/love&may/2.jpg',
-            '/images/logos/mockups/love&may/3.jpg',
-            '/images/logos/mockups/love&may/4.jpg',
-            '/images/logos/mockups/love&may/5.jpg'
-        ]
-    }
+        id: 3, 
+        src: '/images/logos/samples/bravas.jpg', 
+        name: 'Bravas',
+        pdfImage: ['/images/logos/mockups/BRAVAS.jpg']
+    },
+    
   ];
   
   export default logosData;

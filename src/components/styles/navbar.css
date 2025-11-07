@@ -17,6 +17,7 @@
 	width: 100%;
 	position: absolute;
 	padding-top: 36.5rem;
+	z-index: 900;
 }
 
 .home__main-nav ul {
@@ -28,7 +29,6 @@
 .home__main-nav li {
 	margin: 0 20px;
 	font-size: 1.4rem;
-	text-shadow: 1px 1px 1px var(--main-color);
 }
 
 .home__icon {
@@ -43,6 +43,7 @@
     padding: 3.4rem 3rem;
     display: flex;
     justify-content: flex-end;
+	z-index: 900;
 }
 
 .main__nav ul {
@@ -85,6 +86,10 @@
 	align-items: flex-end;
 	gap: 6px;
 	cursor: pointer;
+	position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1100;
 }
 
 .hamburger span {
@@ -93,7 +98,6 @@
   height: 3px;
   background: var(--main-color);
   transition: all 0.3s ease;
-  z-index: 30;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -124,10 +128,17 @@
 		right: 0;
 		width: 50%;
 		height: 100%;
-		background: var(--gray);
+		background: linear-gradient(
+			to bottom right,
+			rgba(255, 255, 255, 0.15),
+			rgba(200, 200, 200, 0.05)
+		);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(13px);
+		border-left: 1px solid rgba(255, 255, 255, 0.25);
+		box-shadow: -4px 0 25px rgba(0, 0, 0, 0.2);
 		padding: 2rem;
-		box-shadow: -4px 0 10px rgba(0,0,0,0.1);
-		z-index: 10;
+		z-index: 1000; 
 	}
 
 	.nav-menu ul {
@@ -142,6 +153,7 @@
 		left: 0;
 		width: 100%;
 		padding: 3.4rem 3rem;
+		z-index: 900;
 	}
 	
 	.home__icon {

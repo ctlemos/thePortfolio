@@ -14,7 +14,7 @@
 	--main-color: #000;
 	--gray: #525252;
 	--links: #FFD700;
-	--links-hover: #eca62b;
+	--links-hover: #373636;
 	--linkedin: rgb(0, 119, 181);
 }
 
@@ -34,7 +34,7 @@ h2 {
 li, a {
 	font-weight: lighter;
 	text-transform: uppercase;
-    color: var(--links);
+    color: var(--main-color);
     list-style: none;
     text-decoration: none;
     font-weight: bold;
