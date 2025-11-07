@@ -17,7 +17,6 @@ const logosData = [
         name: 'Bravas',
         pdfImage: ['/images/logos/mockups/BRAVAS.jpg']
     },
-    
   ];
   
   export default logosData;
