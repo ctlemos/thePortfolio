@@ -17,6 +17,12 @@ const logosData = [
         name: 'Bravas',
         pdfImage: ['/images/logos/mockups/BRAVAS.jpg']
     },
+    { 
+        id: 4, 
+        src: '/images/logos/samples/dt.jpeg', 
+        name: 'DT Cleaning',
+        pdfImage: ['/images/logos/mockups/DT.jpg']
+    }
   ];
   
   export default logosData;
